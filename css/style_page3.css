@@ -1,0 +1,296 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Oswald:wght@300;400&display=swap');
+
+ /*skip to the main button style*/ 
+ .jumper a {
+    position: absolute;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: medium;
+    background: rgba(238, 238, 238, 0.8);
+    color: #00274C;
+    height: 50px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 20000;
+    top: -200px;
+}
+.jumper a:focus {
+    transition: background 0.5s ease;
+    z-index: 20000;
+    margin-left: 30px;
+    top: 30px;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skip to Main Content Link */
+.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #ffcb05;
+    color: #00274C;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-to-main:focus {
+    top: 10px;
+    outline: 2px solid #00274C;
+}
+
+/* Header with a Modern Design */
+header {
+    background: #00274C;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(91, 93, 183, 0.2);
+    color: #FFCB05;
+}
+
+/* Responsive Hamburger Menu */
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.menu-icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 60px;
+}
+nav ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(13, 37, 78, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+#menu-toggle:checked + nav ul {
+    display: flex;
+}
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 20px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 5px;
+    color: #00274C;
+    border-bottom: 3px solid #00274C;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #26262e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p, li {
+    font-size: 18px;
+    color: #040404;
+}
+figcaption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+#mental-health article {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #b8babc22;
+    margin-bottom: 15px;
+}
+
+/* Section Dividers */
+section {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    position: relative;
+}
+
+/* Images */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Top Header Section Styling */
+.top_header {
+    background: linear-gradient(135deg, #06294a, #04386c);
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.top_header h1 {
+    font-size: 32px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.top_header p {
+    font-size: 18px;
+    color:white;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* Resources by Category - Two Column Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.container .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container .item img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.container .item figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00274C;
+    margin-bottom: 5px;
+}
+
+.container .item p {
+    font-size: 16px;
+    color: #362c2c;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00417e;
+    font-weight: bold;
+}
