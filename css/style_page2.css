@@ -15,16 +15,15 @@
     align-content: center;
     text-align: center;
     border-radius: 5px;
-    z-index: 20000;
-    top: -200px;
+    z-index: 20000; /*appear to the top*/
+    top: -200px; /*hidden as the default*/
 }
 .jumper a:focus {
-    transition: background 0.5s ease;
-    z-index: 20000;
-    margin-left: 30px;
+    transition: background 0.5s ease; /* smooth in*/ 
+    z-index: 20000;/*appear to the top*/
+    margin-left: 30px; /* appear -> change location */
     top: 30px;
 }
-
 /* Global Styles */
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -36,26 +35,7 @@ body {
     padding: 0;
 }
 
-/* Skip to Main Content Link */
-.skip-to-main {
-    position: absolute;
-    top: -40px;
-    left: 10px;
-    background: #ffcb05;
-    color: #00274C;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: top 0.3s ease-in-out;
-}
-
-.skip-to-main:focus {
-    top: 10px;
-    outline: 2px solid #00274C;
-}
-
-/* Header with a Modern Design */
+/* Navigaton bar on the top - same sa style.css */
 header {
     background: #00274C;
     color: rgb(255, 255, 255);
@@ -184,14 +164,6 @@ figcaption {
     margin-top: 5px;
 }
 
-
-#mental-health article {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #b8babc22;
-    margin-bottom: 15px;
-}
 
 /* Section Dividers */
 section {

@@ -6,24 +6,24 @@
  /*skip to the main button style*/ 
  .jumper a {
     position: absolute;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif; /*using umich brand typo */ 
     font-weight: 900;
     font-size: medium;
-    background: rgba(238, 238, 238, 0.8);
-    color: #00274C;
+    background: rgba(238, 238, 238, 0.8); /* Semi-transparent background for visibility */
+    color: #00274C; /* UMich brand color */
     height: 50px;
     width: 200px;
     align-content: center;
     text-align: center;
     border-radius: 5px;
-    z-index: 20000;
-    top: -200px;
+    z-index: 20000; /* Ensures it's above all other elements */
+    top: -200px; /* Keeps it hidden until focused */
 }
 .jumper a:focus {
-    transition: background 0.5s ease;
+    transition: background 0.5s ease; /* Smooth background transition */
     z-index: 20000;
     margin-left: 30px;
-    top: 30px;
+    top: 30px; /* Makes it appear when focused */
 }
 
 /* Global Styles */
@@ -37,36 +37,18 @@ body {
     padding: 0;
 }
 
-/* Skip to Main Content Link */
-.skip-to-main {
-    position: absolute;
-    top: -40px;
-    left: 10px;
-    background: #ffcb05;
-    color: #00274C;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: top 0.3s ease-in-out;
-}
-
-.skip-to-main:focus {
-    top: 10px;
-    outline: 2px solid #00274C;
-}
 
 /* Header with a Modern Design */
 header {
-    background: #00274C;
+    background: #00274C; /* UMich brand color */
     color: rgb(255, 255, 255);
     padding: 15px;
     text-align: center;
-    position: sticky;
+    position: sticky; /* Stays on top while scrolling */
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
 }
 
 header h1 {
@@ -114,7 +96,7 @@ nav ul li a {
     transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover { /* Changes color on hover for better UX */
     background: rgba(91, 93, 183, 0.2);
     color: #FFCB05;
 }
@@ -148,17 +130,17 @@ nav ul {
 #menu-toggle:checked + nav ul {
     display: flex;
 }
+
 /* Main Content */
 main {
-    max-width: 900px;
+    max-width: 900px; /*mobile first ui design - try to consistant mobile to web */ 
     margin: 10px auto;
     padding: 20px;
     background: white;
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
 }
 
-h2 {
+h2 { /* styling the title for each box */ 
     font-size: 26px;
     margin-top: 5px;
     color: #00274C;
@@ -166,7 +148,7 @@ h2 {
     padding-bottom: 10px;
 }
 
-h3 {
+h3 { /* styling content text for each box */ 
     font-size: 22px;
     color: #00274C;
     display: flex;
@@ -178,7 +160,8 @@ p, li {
     font-size: 18px;
     color: #040404;
 }
-figcaption {
+
+figcaption { /* picture caption - explanation */ 
     font-size: 14px;
     color: #666;
     text-align: center;
@@ -186,7 +169,7 @@ figcaption {
 }
 
 
-#mental-health article {
+#mental-health article { /* styling the mential health support meterial more intersting */ 
     background: white;
     padding: 15px;
     border-radius: 8px;
@@ -196,10 +179,10 @@ figcaption {
 
 /* Adjust Layout for Life Outside the Classroom */
 
-/* Life Outside the Classroom Layout */
+/* Life Outside the Classroom Layout, 2colum for condensing info */
 #life-outside-classroom {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*flex container */ 
+    flex-direction: column; /*stacked vertically*/
 }
 
 #life-outside-classroom h2 {
@@ -207,35 +190,26 @@ figcaption {
 }
 
 #life-outside-classroom p {
-    margin-top: 10px;
+    margin-top: 10px; /* text down */ 
 }
 
 #life-outside-classroom ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    list-style: none;
+    display: grid; /* Turns the unordered list (<ul>) into a grid layout */ 
+    grid-template-columns: repeat(2, 1fr); /*2 equal columns */ 
+    gap: 20px; /*gap between the list */ 
+    list-style: none; /*remove bulltet */ 
     padding: 0;
 }
 
-#life-outside-classroom ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: #b8babc22;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-#life-outside-classroom ul li strong {
+#life-outside-classroom ul li strong { /* styling the title*/ 
     font-size: 20px;
     font-weight: bold;
     color: #00274C;
     margin-bottom: 10px;
-    display: block;
+    display: block; /*Esures the title in one line */
 }
 
-#life-outside-classroom ul li p {
+#life-outside-classroom ul li p { /*styling text */
     font-size: 16px;
     color: #444;
     margin-top: 5px;
