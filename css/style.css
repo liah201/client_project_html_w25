@@ -140,6 +140,10 @@ main {
     border-radius: 8px;
 }
 
+main ol {
+    margin-left: 3%;
+}
+
 h2 { /* styling the title for each box */ 
     font-size: 26px;
     margin-top: 5px;

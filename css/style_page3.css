@@ -156,6 +156,10 @@ main {
     border-radius: 8px;
 }
 
+main ul {
+    margin-left: 3%;
+}
+
 h2 {
     font-size: 26px;
     margin-top: 5px;
