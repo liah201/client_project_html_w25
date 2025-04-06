@@ -18,12 +18,11 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
-setTimeout(() => {
-    window.location.href = href;
-}, 800); // smooth transition time
 
+// footer year stamp
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// top button functionality
 const topBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
