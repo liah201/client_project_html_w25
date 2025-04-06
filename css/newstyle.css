@@ -58,6 +58,14 @@ header h1 {
     text-align: left;
     text-transform: uppercase;
 }
+.top-h1 {
+    font-size: 30px; /* or match your <h1> size */
+    font-weight: 800;
+    color: white;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    border-bottom: none;
+}
 
 /* Navigation */
 nav {
