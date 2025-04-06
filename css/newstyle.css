@@ -297,7 +297,7 @@ body.fade-out {
     .menu-icon,
     #menu-toggle {
         display: none;
-        /* 햄버거 메뉴 숨김 */
+        /* hide burgar menu*/
     }
 
     header h1 {
