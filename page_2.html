@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Success Portal</title>
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style_page2.css">
-
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/page_style.css">
 </head>
+
 <body>
     <div class="jumper"><a href= "#main">Skip to Main Content</a></div>
     <header>
@@ -18,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="page_1.html">Basic Needs</a></li>
-                <li><a href="page_2.html">Food Pantry</a></li>
+                <li><a href="page_2.html" class = "current-page">Food Pantry</a></li>
                 <li><a href="page_3.html">University Health</a></li>
             </ul>
         </nav>
@@ -89,8 +90,20 @@
       </div>
     </section>
   </main>
+  <button id="backToTop" title="Go to top">⬆ Top</button>
   <footer>
-    <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-    </footer>
+    <p> Student Life | <a href="https://mbc.studentlife.umich.edu/contact/"> Contact with Us </a></p>
+    <p>
+        <a class= "small-link">
+          Open from Monday to Saturday, Closed Suunday | 734-936-2794
+        </a>
+    </p>
+    <p>
+      <a class= "small-link">
+        ©  <span id="year"></span> The Regents of the University of Michigan
+      </a>
+    </p>
+</footer>
+  <script src="js/effect.js"></script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+/* ===== PAGE-SPECIFIC STYLES ===== */
+
+/* Page 1  */
+#mental-health article {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #b8babc22;
+    margin-bottom: 15px;
+}
+
+/* Page 2 */
+.top_header {
+    background: linear-gradient(135deg, #06294a, #04386c);
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 120%;
+    margin-bottom: 20px;
+}
+
+.top_header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.top_header p {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* Page 3*/
+.skip-to-main {
+    top: -40px;
+    left: 10px;
+    background: #ffcb05;
+    color: #00274C;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-to-main:focus {
+    top: 10px;
+    outline: 2px solid #00274C;
+}
+
+/* extra */
+#life-outside-classroom ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#life-outside-classroom ul li strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00274C;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#life-outside-classroom ul li p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 5px;
+}
+
+#backToTop {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 999;
+    font-size: 16px;
+    background-color: #00274C;
+    color: #FFCB05;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    opacity: 0.8;
+}

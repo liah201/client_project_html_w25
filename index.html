@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Success Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/page_style.css">
 
 </head>
+
 <body>
-    <div class="jumper"><a href= "#main">Skip to Main Content</a></div>
+    <div class="jumper"><a href="#main">Skip to Main Content</a></div>
     <header>
         <h1>Student Success Portal</h1>
         <label for="menu-toggle" class="menu-icon">☰</label>
         <input type="checkbox" id="menu-toggle">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="current-page">Home</a></li>
                 <li><a href="page_1.html">Basic Needs</a></li>
                 <li><a href="page_2.html">Food Pantry</a></li>
                 <li><a href="page_3.html">University Health</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main id="main">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included
+                the following resources throughout our site:</p>
             <ol>
                 <li>Academic Resources</li>
                 <li>Physical Health</li>
@@ -38,35 +42,41 @@
         </section>
         <section>
             <h2>Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources
+                to help you stay in top physical condition:</p>
             <article>
                 <h3>University Health Service (UHS)</h3>
                 <figure>
                     <img src="images/UHS.jpg" alt="University Health Services building">
                     <figcaption>University Health Services Building</figcaption>
                 </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups,
+                    vaccinations, and specialist referrals.</p>
             </article>
             <article>
                 <h3>Recreational Sports</h3>
                 <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
+                        alt="A student wears a UMSI backpack in fall on the drag.">
                     <figcaption>UMSI out in the fall!</figcaption>
                 </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and
+                    healthy.</p>
             </article>
         </section>
 
         <section id="mental-health">
             <h2>Mental Health</h2>
-            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
+            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to
+                support your mental health:</p>
             <article>
                 <h3>Counseling and Psychological Services (CAPS)</h3>
                 <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
             </article>
             <article>
                 <h3>Wellness Coaching</h3>
-                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
+                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.
+                </p>
             </article>
             <article>
                 <h3>Mindfulness Resources</h3>
@@ -81,20 +91,50 @@
 
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
-            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some
+                resources to help you enjoy life outside the classroom:</p>
             <ul>
-                <li><strong>Student Organizations</strong> <p> Join one of the many student organizations to connect with peers who share your interests and passions.</p></li>
-                <li><strong>Arts and Culture</strong> <p>Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</p></li>
-                <li><strong>Career Services</strong> <p>Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</p></li>
-                <li><strong>Community Engagement</strong><p>Get involved with local volunteering opportunities and community service projects to make a positive impact.</p> </li>
-                <li><strong>Housing and Dining</strong> <p>Find information on on-campus housing options and dining services to ensure a comfortable living experience.</p></li>
+                <li><strong>Student Organizations</strong>
+                    <p> Join one of the many student organizations to connect with peers who share your interests and
+                        passions.</p>
+                </li>
+                <li><strong>Arts and Culture</strong>
+                    <p>Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.
+                    </p>
+                </li>
+                <li><strong>Career Services</strong>
+                    <p>Utilize career counseling, job search resources, and networking opportunities to prepare for your
+                        professional future.</p>
+                </li>
+                <li><strong>Community Engagement</strong>
+                    <p>Get involved with local volunteering opportunities and community service projects to make a
+                        positive impact.</p>
+                </li>
+                <li><strong>Housing and Dining</strong>
+                    <p>Find information on on-campus housing options and dining services to ensure a comfortable living
+                        experience.</p>
+                </li>
             </ul>
         </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
+    <button id="backToTop" title="Go to top">⬆ Top</button>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p> <span id="year"></span> MSI Academic Advising | 
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a>
+          </p>
+          <p>
+            <a class= "small-link" href="https://si-umich.navigate.eab.com" target="_blank" rel="noopener noreferrer">
+              Click to Schedule a 1:1 Appointment
+            </a>
+            <a class="small-link">  |  </a>
+            <a class= "small-link" href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor?authuser=0" target="_blank" rel="noopener noreferrer">
+               Get connect with an Advisor
+              </a>
+          </p>
+    </footer>
+    <script src="js/effect.js"></script>
 </body>
+
 </html>
