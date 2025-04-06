@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
 });
 
 window.onscroll = () => {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
