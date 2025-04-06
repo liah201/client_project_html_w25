@@ -34,13 +34,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// window.onscroll = () => {
-//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-//         topBtn.style.display = "block";
-//     } else {
-//         topBtn.style.display = "none";
-//     }
-// };
+window.onscroll = () => {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
 
 topBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
